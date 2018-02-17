@@ -10,7 +10,7 @@ https://kubernetes.io/docs/setup/independent/create-cluster-kubeadm/
 
 ## Deployment
 
-The following command create a deployment with a replica set and pods of nginx containers (https://kubernetes.io/docs/tasks/run-application/run-stateless-application-deployment/).
+The following command creates a deployment with a replica set containing two pods of nginx containers (https://kubernetes.io/docs/tasks/run-application/run-stateless-application-deployment/).
 ```shell
 kubectl --kubeconfig ./admin.conf apply -f nginx.yml
 ```
