@@ -8,6 +8,15 @@ I installed Kubernetes on Digital Ocean VMs following this guide:
 
 https://kubernetes.io/docs/setup/independent/create-cluster-kubeadm/
 
+## Pod Network
+
+I installed the pod network `Weave Net` with:
+
+```shell
+export kubever=$(kubectl version | base64 | tr -d '\n')
+kubectl apply -f "https://cloud.weave.works/k8s/net?k8s-version=$kubever"
+```
+
 ## Deployment
 
 The following command creates a deployment with a replica set containing two pods of nginx containers (https://kubernetes.io/docs/tasks/run-application/run-stateless-application-deployment/).
